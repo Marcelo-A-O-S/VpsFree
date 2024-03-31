@@ -40,5 +40,5 @@ jobs:
       - name: install rdp
         run: |
           sudo apt-get update
-          sudo apt install xrdp xorgxrdp freerdp2-x11
+          sudo apt install xrdp
           
