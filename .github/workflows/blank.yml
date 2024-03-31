@@ -41,7 +41,15 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install xrdp
+          
+      - name: enable xrdp
+        run: |
           sudo systemctl enable xrdp
           sudo ufw allow from any to any port 3389 proto tcp
+      - name: Ip address
+        run: |
           ip address
-          
+      - name: User
+        run: id -u -n
+        
+  
