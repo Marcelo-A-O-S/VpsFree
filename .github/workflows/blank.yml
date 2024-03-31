@@ -46,6 +46,8 @@ jobs:
         run: |
           sudo systemctl enable xrdp
           sudo ufw allow from any to any port 3389 proto tcp
+      - name: restart xrdp
+        run: sudo systemctl restart xrdp
       - name: Ip address
         run: |
           ip address
